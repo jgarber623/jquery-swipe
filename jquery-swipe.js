@@ -45,6 +45,8 @@
 				this.elem.addEventListener( "touchmove", $.proxy( this.touchMove, this ), false );
 				this.elem.addEventListener( "touchstart", $.proxy( this.touchStart, this ), false );
 			}
+			
+			return this;
 		},
 		
 		touchCancel: function( event ) {
