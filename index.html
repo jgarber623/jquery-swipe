@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>jquery-swipe by jgarber623</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>jquery-swipe</h1>
+        <p>A jQuery plugin for binding actions to left and right swipe events in Mobile Safari (or any browser that supports onTouchStart, onTouchEnd, onTouchMove, and onTouchCancel events).</p>
+        <p class="view"><a href="https://github.com/jgarber623/jquery-swipe">View the Project on GitHub <small>jgarber623/jquery-swipe</small></a></p>
+        <ul>
+          <li><a href="https://github.com/jgarber623/jquery-swipe/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/jgarber623/jquery-swipe/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/jgarber623/jquery-swipe">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>jquery-swipe</h1>
+
+<p>A jQuery plugin for binding actions to left and right swipe events in Mobile Safari (or any browser that supports onTouchStart, onTouchEnd, onTouchMove, and onTouchCancel events).</p>
+
+<p>This plugin is based heavily on <a href="http://www.ryanscherf.net">Ryan Scherf</a>'s <a href="http://archive.plugins.jquery.com/project/swipe">jQuery Swipe Plugin</a>. Credit for all the hard maths go to him.</p>
+
+<h2>Requirements</h2>
+
+<ul>
+<li>
+<a href="http://jquery.com/">jQuery</a> (1.7.2 or greater is recommended)</li>
+<li>A device running iOS or the iPhone Simulator</li>
+</ul><h2>Usage</h2>
+
+<pre><code>$( window ).swipe({
+    left: function() {
+        console.log( "You swiped left!" );
+    },
+    right: function() {
+        console.log( "You swiped right!" );
+    },
+    threshold: {
+        x: 200,
+        y: 50
+    }
+});
+</code></pre>
+
+<h3>Parameters</h3>
+
+<ul>
+<li>
+<code>left</code>: A function you'd like to execute when a left swipe is detected. Defaults to <code>function( event ) {}</code>.</li>
+<li>
+<code>right</code>: A function you'd like to execute when a right swipe is detected. Defaults to <code>function( event ) {}</code>.</li>
+<li>
+<code>threshold</code>: An object containing an <code>x</code> and <code>y</code> value. The threshold is used to determine what constitues a swipe. The implied unite is pixels and the default threshold is <code>{ x: 100, y: 25 }</code>.</li>
+</ul><h2>TODO</h2>
+
+<ul>
+<li>Add support for callbacks</li>
+<li>Improve event handling</li>
+<li>Figure out what the heck touchCancel is</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/jgarber623">jgarber623</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
