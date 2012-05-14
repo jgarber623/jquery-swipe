@@ -1,5 +1,5 @@
 /**
- * @name jQuery selectReplace (https://github.com/jgarber623/jquery-swipe)
+ * @name jQuery Swipe plugin (https://github.com/jgarber623/jquery-swipe)
  * @author Jason Garber
  * @copyright (cc) Jason Garber (http://sixtwothree.org and http://www.viget.com)
  * 
